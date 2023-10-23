@@ -1,12 +1,17 @@
 public class Inventory {
-    private int size = 0;
+    //Initialises the amount that is being stored
+    private int total = 0;
+    //Creates a synchronized method to increment the total
     public synchronized void addItem(){
-        size++;
+        //Increments the total
+        total++;
     }
     public synchronized void removeItem(){
-        size--;
+        //Decrements the total
+        total--;
     }
     public synchronized int returnQuantity(){
-        return size;
+        //Returns the total
+        return total;
     }
 }
